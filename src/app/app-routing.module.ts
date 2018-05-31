@@ -1,7 +1,23 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { GalleryComponent } from './gallery/gallery.component';
+import { ImageDetailComponent } from './image-detail/image-detail.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: 'Gallery',
+    component: GalleryComponent
+  },
+  {
+    path: 'image/:id',
+    component: ImageDetailComponent
+  },
+  {
+    path:'', 
+    redirectTo:"/gallery", 
+    pathMatch: 'full'
+  },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

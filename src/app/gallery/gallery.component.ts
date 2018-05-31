@@ -8,17 +8,16 @@ import { ImageService } from '../image.service';
 })
 export class GalleryComponent implements OnInit , OnChanges {
 
-  title:string = "Photos";
-
-  @Input() filterBy?: string = 'all';
+  @Input() filterBy?: string = 'All';
   visibleImages: any[] = [];
 
 
 
   constructor(private imageService:ImageService) {
+    
   }
 
-  ngOnInit() {  
+  ngOnInit() {
     this.visibleImages = this.imageService.getImages();
     console.log(this.visibleImages);
   }

@@ -8,8 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class NavbarComponent implements OnInit {
 
   title:string = "Gallery";
-  searchText:string = "GO!";
-  links = ["Home", "something", "About"];
+  title2:string = "Crazy";
 
   constructor() { }
 
