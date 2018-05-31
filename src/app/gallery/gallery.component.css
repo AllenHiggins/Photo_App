@@ -1,3 +1,26 @@
 h4{
     padding: 1em;
 }
+
+ul li{
+    list-style: none;
+    padding: 1em;
+    display: inline-block;
+}
+
+ul li:hover{
+    cursor: pointer;
+
+}
+
+.thumnail{
+    opacity: .8;
+    width: 15em;
+    height: 15em;
+    border: 2px solid rgb(223, 222, 222);
+    box-shadow: #555 1px 1px 8px 1px;
+}
+
+.thumnail:hover{
+    opacity: 1;
+}

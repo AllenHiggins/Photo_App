@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ImageDetailComponent } from './image-detail/image-detail.component';
+import { ImageService } from './image.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { ImageDetailComponent } from './image-detail/image-detail.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ImageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
