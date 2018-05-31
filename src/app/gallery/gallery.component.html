@@ -1,8 +1,14 @@
 <div class="container">
   <h4>{{ title }}</h4>
   <div class="row">
+    <div class="btnOptions">
+      <button class="btn btn-lg btn-info" [class.active]="filterBy=='all'" (click)="filterBy='all'">All</button>
+      <button class="btn btn-lg btn-info" [class.active]="filterBy=='Comic Heros'" (click)="filterBy='Comic Heros'">Comic Heros</button>
+      <button class="btn btn-lg btn-info" [class.active]="filterBy=='Starwars'" (click)="filterBy='Starwars'">Starwars</button>
+      <button class="btn btn-lg btn-info" [class.active]="filterBy=='80s TV'" (click)="filterBy='80s TV'">80s TV</button>
+    </div>
     <ul id="thumnailList">
-      <li *ngFor="let image of visibleImages" >
+      <li *ngFor="let image of (visibleImages | imageFilter:filterBy)" >
         <img src="{{image.url}}" class="thumnail">
       </li>
     </ul>

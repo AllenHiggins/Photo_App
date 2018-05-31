@@ -1,5 +1,6 @@
 h4{
     padding: 1em;
+    padding-left: 1.8em;
 }
 
 ul li{
@@ -15,12 +16,22 @@ ul li:hover{
 
 .thumnail{
     opacity: .8;
-    width: 15em;
-    height: 15em;
+    width: 10em;
+    height: 10em;
     border: 2px solid rgb(223, 222, 222);
     box-shadow: #555 1px 1px 8px 1px;
 }
 
 .thumnail:hover{
     opacity: 1;
+}
+
+.btn{
+    margin: .3em;
+    font-size: 12px;
+    padding: 5px;
+}
+
+div.btnOptions{
+    padding-left: 3.5em;
 }
