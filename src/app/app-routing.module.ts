@@ -5,15 +5,15 @@ import { ImageDetailComponent } from './image-detail/image-detail.component';
 
 const routes: Routes = [
   {
-    path: 'Gallery',
+    path: "gallery",
     component: GalleryComponent
   },
   {
-    path: 'image/:id',
+    path: "image/:id",
     component: ImageDetailComponent
   },
   {
-    path:'', 
+    path:"", 
     redirectTo:"/gallery", 
     pathMatch: 'full'
   },
